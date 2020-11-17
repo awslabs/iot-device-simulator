@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { UserRegistrationService } from './service/user-registration.service';
 import { UserLoginService } from './service/user-login.service';
@@ -37,7 +36,6 @@ import { LogoutComponent, RegistrationConfirmationComponent } from './public/aut
 import { ResendCodeComponent } from './public/auth/resend/resendCode.component';
 import { NewPasswordComponent } from './public/auth/newpassword/newpassword.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AsyncLocalStorageModule } from 'angular-async-local-storage';
 import { EqualValidator } from './shared/equal-validator.directive';
 import { BlockUIModule } from 'ng-block-ui';
 
@@ -76,9 +74,7 @@ import { BlockUIModule } from 'ng-block-ui';
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
-        HttpModule,
         routing,
-        AsyncLocalStorageModule,
         BlockUIModule.forRoot()
     ],
     providers: [
